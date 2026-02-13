@@ -38,10 +38,28 @@ nav {
     z-index: 1000;
 }
 
+.nav-logo{
+    height: 40px; /*tamaño de mi logo*/
+    width: auto; /*que no se deforme la imagen*/
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s ease; /*nada mas de sobra que sea suave*/
+}
+
 nav ul {display: flex; list-style: none;}
 nav ul li { margin-left: 20px;}
 nav a {text-decoration: none; color: var(--text-color); font-weight: bold; font-size: 0.9rem;}
 nav a:hover {color: var(--accent-color);}
+
+.nav-logo:hover{
+    transform: scale(1.1); /*se hace un poco grande al pasar el mouse*/
+}
+
+/*para que el contenedor .logo no tenga padding extra que se vea mal*/
+.logo{
+    display: flex;
+    align-items: center;
+}
 
 /*seccion del heroe*/
 .hero {
