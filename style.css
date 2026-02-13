@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #1c1c1c;
+    --card-bg:#222222;
+    --text-color: #ffffff;
+    --accent-color: #047ecd;
+    --highlight: #fe9a1d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/*navegacion*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: #fe9a1d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
